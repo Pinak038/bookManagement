@@ -14,7 +14,7 @@ app.use("/api/books", blogRouter);
 
 //configure mongoose
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost:27017/bookdb",
+  process.env.MONGODB_URI || "mongodb+srv://dpinak20:dbGTOCP1EoAXggGx@cluster0.tkvmbt8.mongodb.net/",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
