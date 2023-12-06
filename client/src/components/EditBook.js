@@ -8,7 +8,7 @@ const EditBook = ({ history }) => {
   const [book, setBook] = useState(null);
 
   function getBook() {
-    axios.get(`http://localhost:3001/api/books/${id}`)
+    axios.get(`https://book-management-pinaks-projects-11969895.vercel.app/api/books/${id}`)
     .then(function (response) {
       // handle success
       console.log(response);
@@ -28,7 +28,7 @@ const EditBook = ({ history }) => {
   }, []);
 
   const handleOnSubmit = (book) => {
-    axios.put(`http://localhost:3001/api/books/${id}`, book)
+    axios.put(`https://book-management-pinaks-projects-11969895.vercel.app/api/books/${id}`, book)
     .then(function (response) {
       console.log(response);
       history.push('/');

@@ -7,7 +7,7 @@ const BooksList = () => {
   const [ books, setBooks ] = useState([]);
 
   function getBooks() {
-    axios.get('http://localhost:3001/api/books')
+    axios.get('https://book-management-pinaks-projects-11969895.vercel.app/api/books')
     .then(function (response) {
       // handle success
       console.log(response);
@@ -27,7 +27,7 @@ const BooksList = () => {
   }, []);
 
   const handleRemoveBook = (id) => {
-    axios.delete(`http://localhost:3001/api/books/${id}`)
+    axios.delete(`https://book-management-pinaks-projects-11969895.vercel.app/api/books/${id}`)
     .then(function (response) {
       // handle success
       console.log(response);

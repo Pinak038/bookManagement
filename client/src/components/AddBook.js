@@ -4,7 +4,7 @@ import BookForm from './BookForm';
 const AddBook = ({ history }) => {
 
   const handleOnSubmit = (book) => {
-    axios.post('http://localhost:3001/api/books', book)
+    axios.post('https://book-management-pinaks-projects-11969895.vercel.app/api/books', book)
     .then(function (response) {
       console.log(response);
       history.push('/');
